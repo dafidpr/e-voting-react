@@ -7,14 +7,14 @@ import Auth from './pages/Auth';
 function App() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
       <BrowserRouter>
 
         <Route path="/" exact component={Home} />
 
       </BrowserRouter>
-      <Footer/>
-      {/* <Auth /> */}
+      <Footer/> */}
+      <Auth />
     </div>
   );
 }

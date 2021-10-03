@@ -6,6 +6,9 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import 'font-awesome/css/font-awesome.min.css';
 import './App.css';
 import reportWebVitals from './reportWebVitals';
+import axios from 'axios';
+
+axios.defaults.baseURL ='http://34.121.111.77:3000/api/v1/';
 
 ReactDOM.render(<App />, document.getElementById('root')
 );
