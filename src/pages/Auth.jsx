@@ -19,6 +19,7 @@ export default class Auth extends Component {
         axios.post('auth/signin', data)
             .then(res => {
                 localStorage.setItem('token', res.data.data.token);
+                this.props.history.push("/voting");
             }, this.setState({ error: false }))
             .catch(err => this.setState({ error: true }))
 
