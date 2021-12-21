@@ -7,8 +7,9 @@ import 'font-awesome/css/font-awesome.min.css';
 import './App.css';
 import reportWebVitals from './reportWebVitals';
 import axios from 'axios';
+import {baseApi} from './config'
 
-axios.defaults.baseURL ='http://34.121.111.77:3000/api/v1/';
+axios.defaults.baseURL = baseApi;
 
 ReactDOM.render(<App />, document.getElementById('root')
 );
