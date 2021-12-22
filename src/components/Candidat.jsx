@@ -54,7 +54,6 @@ export default class CandidatComponent extends Component {
                             }
                         })
                     }
-                    // console.log(res)
                 }).catch(res => {
                     MySwal.fire({
                         title: "Ditolak!",
@@ -99,7 +98,6 @@ export default class CandidatComponent extends Component {
                             <div className="col-md-12">
                                 <h5>Visi</h5>
                                 <p dangerouslySetInnerHTML={{__html: this.props.visi}}></p>
-                                {/* {this.props.visi} */}
                                 <h5>Misi</h5>
                                 <p dangerouslySetInnerHTML={{__html: this.props.misi}}></p>
                             </div>

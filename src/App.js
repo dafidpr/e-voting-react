@@ -32,7 +32,7 @@ function App() {
           <Lottie options={defaultOptions}
           height={200}
           width={200}
-          style={{alignItems: 'center', justifyContent: 'center', textAlign: 'center', display: 'flex'}}/>
+          style={{alignItems: 'center', justifyContent: 'center', textAlign: 'center', display: 'flex', marginTop:'370px'}}/>
         ) : (
           <BrowserRouter>
             <Route path="/voting" exact component={Home} />
