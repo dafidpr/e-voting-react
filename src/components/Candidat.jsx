@@ -57,15 +57,15 @@ export default class CandidatComponent extends Component {
                 }).catch(res => {
                     MySwal.fire({
                         title: "Ditolak!",
-                        text: "Kamu sudah melakukan voting",
-                        timer: 2000,
+                        text: res.response.data.message,
+                        // timer: 2000,
                         icon: "error",
-                        showConfirmButton: false,
-                        didOpen: () => {
-                            MySwal.showLoading()
-                        }
+                        // showConfirmButton: true,
+                        // didOpen: () => {
+                        //     MySwal.showLoading()
+                        // }
                     }).then((result) => {
-                        if (result.dismiss === Swal.DismissReason.timer) {
+                        if (result.isConfirmed) {
                             localStorage.removeItem('token')
                             window.location.href = "/"
                         }
